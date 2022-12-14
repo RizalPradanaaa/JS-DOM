@@ -1,0 +1,45 @@
+*{
+	margin: 0;
+	padding: 0;
+	line-height: 5px;
+}
+
+body{
+	background-color: #ccc;
+	text-align: center;
+}
+
+.container{
+	width: 600px;
+	margin: 10px auto;
+	border: 5px solid white;
+	overflow: auto;
+}
+
+.thumb{
+	width: 200px;
+	float: left;
+	border: 2px solid white;
+	box-sizing: border-box;
+}
+
+.thumb:hover{
+	opacity: .5;
+	cursor: pointer;
+}
+
+.fade{
+	opacity: 0;
+	animation: fadee 1s forwards;
+}
+
+@keyframes fadee{
+	to{
+		opacity: 1;
+	}
+}
+
+
+.blur{
+	opacity: .5;
+}
